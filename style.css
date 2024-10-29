@@ -1,0 +1,110 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    background:linear-gradient(135deg, #153677bd, #4e085fe1);
+    padding: 10px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.todo-app{
+    width: 45%;
+    max-width: 540px;
+    background: white;
+    border-radius: 10px;
+    padding: 40px 30px 70px;
+}
+
+.todo-app h2{
+    color: #002765;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.row{
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     background: #edeef0;
+     /* padding-left:20px ; */
+     border-radius: 20px;
+}
+input{
+    flex: 1;    
+    border: none;
+    outline: none;
+    padding: 10px;
+    padding-left: 20px;
+    background: transparent;
+    font-weight: 18px;
+    font-size: 14px;
+}
+
+button{
+    border: none;
+    outline: none;
+    padding: 10px 40px;
+    background: rgba(128, 0, 128, 0.252);
+    border-radius: 20px;
+    color: white;
+    font-size: larger;
+    cursor: pointer;
+}
+button:hover{
+    background: rgba(128, 0, 128, 0.381);
+}
+#list-container{
+    margin: 40px 22px;
+}
+
+ul li{
+    list-style: none;
+    padding: 5px 5px 5px 20px;
+    background: rgba(113, 43, 226, 0.273);
+    margin-top: 10px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul li span {
+    font-size: 25px;
+    height: 30px;
+    width: 30px;
+    padding-left: 8px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+ul li span:hover{
+    background: rgba(0, 0, 0, 0.329);
+    color: #edeef0;
+}
+
+@media screen and (width < 900px) {
+    .container{
+    background:linear-gradient(135deg, #3a507dbd, #ad13d49e);
+    }
+    .todo-app{
+        width: 90%;
+        padding: 40px 15px 30px;
+    }
+    input{
+        font-size: 14px;
+        padding-left: 12px;
+    }
+    button{
+        padding: 10px 20px;
+    }
+    ul li{
+        padding: 3px 5px 3px 10px;
+        font-size: 14px;
+    }
+}
